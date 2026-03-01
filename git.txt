@@ -6,7 +6,8 @@
  > git add .(Don't forget the ".")
 
  go to GitHub and create a repo.
- > git remote add origin git@github.com:chiru1016/ll.git
+ According to your repo, (After creating repo these are displayed down there)
+ > git remote add origin git@github.com:chiru1016/ll.git 
  > git branch -M main
  > git push -u origin main 
  
