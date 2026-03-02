@@ -3,7 +3,9 @@
 
  create a file, then add content
  go to cmd/terminal 
+ > nano SRI.txt
  > git add .(Don't forget the ".")
+ > git commit -m "me Added"
 
  go to GitHub and create a repo.
  According to your repo, (After creating repo these are displayed down there)
@@ -12,38 +14,46 @@
  > git push -u origin main 
  
  open file make changes, then go to terminal.
+ > nano SRI.txt
  > git add .
  > git commit -m "2nd commit" (<-- your message with in "--" )
  > git push
 
  open file or repo file will be updated
  
- creating a branch named "me"
- > git branch me
- > git switch me  (switch or checkout u can use both)
+ creating a branch named "F1"
+ > git branch F1
+ > git switch F1  (switch or checkout u can use both)
  
  open file add some content, then.
+ > nano SRI.txt
  > git add .
- > git commit -m "me is adding"
- > git push --set-upstream origin me
+ > git commit -m "F1 is adding"
+ > git push --set-upstream origin F1
  
- your Branch has been created, now add another Branch called "fix" in the main.
+ your Branch has been created, now add another Branch called "F2" in the main.
  > git switch main
- > git branch fix
- > git switch fix
+ > git branch F2
+ > git switch F2
  
  open file add new line content.
+ > nano SRI.txt
  > git add .
- > git commit -m "fix"
- > git push --set-upstream origin fix
+ > git commit -m "F2 is adding"
+ > git push --set-upstream origin F2
 
  Now merge
- > git merge main
- > git push --set-upstream origin me
- 
- go to Github and in repo commit changes, 
- wile doind second commit it will show conflicts if it's in same line(make sure it's in same line)
- resolve the conflicts , then in cmd/terminal.
- > git pull
+ > git switch main
+ > git merge F1
+ > git merge F2
+
+ conflicts will come. open file in the terminal to
+ resolve the conflicts in cmd/terminal.
+ > nano SRI.txt
+
+ make changes, then
+ > git add .
+ > git commit -m "conf solved"
+ > git push
  
  changes are in the main Branch now.
