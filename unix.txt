@@ -44,6 +44,6 @@
  > whoami
  
  find pattren in the file
- > grep "a" shri.txt
+ > grep "a" shri.tx
  
  
